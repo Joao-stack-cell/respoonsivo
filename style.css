@@ -1,0 +1,165 @@
+ * {/* estilos globais tudo oque for querer colocar pra todos , coloca aqui */
+     margin: 0;/* o projeto não vai ter margem , podemos organizar distãncia depois*/
+     padding: 0;/* aqui da mesma forma de o margin */
+     box-sizing: border-box; /* vai  calcular larguras e altura dos elementos , mas isso depois arrumamos , para não generalizar todos */
+     font-family: "Oswald", sans-serif;/* fonte do paragrafo , no texto , formato de texto */
+     font-weight: 400;/*todos as palavras vão ter o mesma fonte , peso em negrito por exemplo */
+     color: #5D5D7D;   /* aqui essa cor sera usada para todas as palavras do texto , salvo apenas aquelas sendo sobressaida depois ou estilizada */
+ }
+
+ .wraper {
+
+     height: 50vh; /* aqui vai delimitar a altura da div , caixa maior , vai preencher o tamanho da tela usada vh*/
+     width: 50vw; /* aqui a largura da div , aqui vai preencher a largura da tela a ser usada */
+
+ }
+
+
+ .container-left {
+     /* vai deixar o conteudo do projeto na mesma linha */
+     display: inline-block; /* vai deixar os elementos na mesma linha , as section */
+     width: 60%; /* a largura a ser preenchida pela  section , vai ser usada em porcentagem , preenche melhor */
+     padding-left: 120px; /* distancia os item dentro da section , do lado esquerdo */
+     margin-top: 05%; /* margem em cima da section */
+ }
+
+
+ .container-right {
+     /* vai deixar os conteudos do lado direito e esquerdo na mesma linha e lado a lado */
+     display: inline-block; /* vai deixar os elementos na mesma linha */
+     background-color: rgba(93, 93, 125, 0.16); /* vai dar o tom opaco , transparente na foto , cor de fundo da imagem  , ser preenchido em toda a section */
+     height: 130vh; /* o tamanho a ser preenchido pela section , na tela do computador , sendo usado o vh , altura  */
+     width: 35%; /* a largura a ser preenchida pela section na tela , sendo usada em porcentagem */
+     position: relative; /* por enquanto alterar a posição de um elemento tendo como referência a posição inicial dele, refente quando a tela mexer */
+
+ }
+
+
+ img {
+     position: relative; /* alterar a posição de um elemento tendo como referência a posição inicial dele, referente a tela  quando ela mexer */
+     top: 15%; /* O "top" posiciona o elemento em um coordenada, distancia a imagem da dilimitação da section */
+     right: 135px; /* vai posicionar a imagem a diretita da tela */
+     height: 400px; /* vai ajustar a altura da imagem */
+ }
+
+ h1 {
+     font-size: 70px; /* usada para indicar o tamanho da letra */
+     line-height: 80px; /* altura da linha do texto */
+     width: 368px; /*vai ser a largura ocupada pelo texto */
+ }
+
+ p {
+     font-size: 20px; /* usada para indicar o tamanho da letra */
+     line-height: 40px; /* altura da linha do texto */
+     margin: 15px 0; /* afastamento  do paragrafo , em cima embaixo , dos lados */
+     width: 540px; /* largura a ser preenchida pelo texto na tela do computador */
+ }
+
+ button {
+     width: 269px; /* largura do botão */
+     height: 62px; /* altura do botão */
+     background: #9499EA; /* cor dentro do botão */
+     box-shadow: 0px 10px 24px rgba(148, 153, 234, 0, 0979959); /* vai adicionar uma sombra no botão um pouco transparente */
+     border: none; /* vai deixar o botão sem borda */
+     border-radius: 30px; /* vai arredondar um pouco as beiradas do botão */
+     font-size: 24px;/* vai indicar o tamanho da letra */
+     line-height: 36px; /* altura da linha do texto */
+     text-align: center; /* vai deixar o texto no centro do botão */
+     color: #ffffff; /* vai eixar o texto dentro do botão branco */
+     cursor: pointer; /* deixar aquela mãozinha em cima do botão */
+ }
+
+ button:hover { /* vai deixar o botão um pouco claro quando o mouse encostar no botão */
+     opacity: .8; /* o efeito  */
+ }
+
+ button:active {  /* quando for clicado o botão vai ficar mais claro ainda */
+     opacity: .05; /* o efeito */
+
+ }
+
+ a { /* links */
+     font-size: 28px; /*vai indicar o tamanho da letra */
+     line-height: 41px; /* o altura da linha do texto */
+     color: #5D5D7D; /*cor de todos os links */
+     margin-right: 45px; /* Ele define a área da margem no lado direito do elemento */
+     cursor: pointer; /*  deixar aquela mãozinha em cima do botão */
+ }
+
+ a:nth-child(2) { /* e usado para desbotar ou tirar a cor de um elemento , usado pela o numero de identificação  ou posição , aqui sendo o 2 */
+     opacity: .4; /* o tom usado */
+
+ }
+
+ a:hover { /* dando um tom mais leve  quando o mouse encostar no link */
+     opacity: .4; /* o tom sendo usado */
+
+ }
+
+ a:active { /* dando um tom  mais forte quando o link for clicado */
+     opacity: .8;
+
+ }
+
+ header {
+     margin: 24px 0px 0px 10px; /* espaço entre os link , em cima embaixo  , dos lados */
+
+ }
+
+
+
+ @media screen and (max-width:700px) {
+     .container-left {
+         width: 100%;
+         height: 50%;
+         margin: 0;
+         padding: 0;
+     }
+
+     .container-right {
+         display: block;
+         height: auto;
+         width: 100%;
+         position: static;
+         padding: 40px;
+     }
+
+     img {
+         position: static;
+         max-width: 90%;
+
+     }
+
+     header {
+         display: none;
+
+     }
+
+     h1 {
+         font-size: 36px;
+         line-height: 52px;
+         width: auto;
+         margin: 58px 58px 0 50px;
+         text-align: center;
+     }
+
+     p {
+         margin: 15px 40px;
+         width: auto;
+         text-align: center;
+         font-size: 14px;
+         line-height: 24px;
+     }
+
+     button {
+         margin: 15px auto;
+         display: block;
+
+     }
+
+
+
+
+
+
+ }
